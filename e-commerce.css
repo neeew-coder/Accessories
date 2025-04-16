@@ -114,7 +114,7 @@ img{
 header{
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 5;
     background: var(--primary-color);
 }
 
@@ -280,6 +280,7 @@ header .navbar {
     color: var(--white-color);
     background: var(--dark-color);
     padding: 50px 0 100px;
+   
 }
 
 .jewelry-section .jewelry-list{
@@ -303,6 +304,7 @@ header .navbar {
     aspect-ratio: 1;
     margin-bottom: 15px;
     object-fit: contain;
+   
 }
 
 .jewelry-section .jewelry-list .jewelry-item .name{
@@ -810,11 +812,40 @@ body.show-mobile-menu .navbar .nav-menu{
     max-width: 200px;
 }
 
-.gallery-section .gallery-list{
+.jewelry-section .jewelry-list{
     gap: 30px;
 }
 
-.gallery-section .gallery-list .gallery-item{
+.jewelry-section .jewelry-list .jewelry-item{
+    width: calc(100% / 2 - 30px);
+}
+
+.ring-section .ring-list{
+    gap: 30px;
+}
+
+.ring-section .ring-list .ring-item{
+    width: calc(100% / 2 - 30px);
+}
+.watch-section .watch-list{
+    gap: 30px;
+}
+
+.watch-section .watch-list .watch-item{
+    width: calc(100% / 2 - 30px);
+}
+.bracelet-section .bracelet-list{
+    gap: 30px;
+}
+
+.bracelet-section .bracelet-list .bracelet-item{
+    width: calc(100% / 2 - 30px);
+}
+.earing-section .earing-list{
+    gap: 30px;
+}
+
+.earing-section .earing-list .earing-item{
     width: calc(100% / 2 - 30px);
 }
 .contact-section .section-content{
@@ -823,17 +854,21 @@ body.show-mobile-menu .navbar .nav-menu{
 }
 
 }
- @media screen and (max-width: 720px){
-   display: none;
- }
- }
+
+@media screen and  (max-width: 720px){
+    .navbar{
+        display: none;
+
+    }
+
+}
+ 
 @media screen and (max-width: 640px){
     .model-section .model-list {
         gap: 60px;
     }
 
-    .model-section .model-list .model-item,
-    .gallery-section .gallery-list .gallery-item{
+    .model-section .model-list .model-item{
         width: 100%;
   }
 
